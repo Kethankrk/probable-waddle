@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -520,6 +520,30 @@ video {
   position: absolute;
 }
 
+.right-0 {
+  right: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.top-5 {
+  top: 1.25rem;
+}
+
+.left-5 {
+  left: 1.25rem;
+}
+
+.left-0 {
+  left: 0px;
+}
+
 .-z-20 {
   z-index: -20;
 }
@@ -572,16 +596,24 @@ video {
   margin-top: 2rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-\[110px\] {
   height: 110px;
 }
 
-.h-\[150px\] {
-  height: 150px;
+.h-\[40px\] {
+  height: 40px;
 }
 
 .h-full {
@@ -592,6 +624,10 @@ video {
   height: 100vh;
 }
 
+.h-\[800px\] {
+  height: 800px;
+}
+
 .max-h-\[800px\] {
   max-height: 800px;
 }
@@ -600,16 +636,20 @@ video {
   width: 25%;
 }
 
-.w-2\/5 {
-  width: 40%;
-}
-
 .w-\[120px\] {
   width: 120px;
 }
 
-.w-\[40\%\] {
-  width: 40%;
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-\[40px\] {
+  width: 40px;
+}
+
+.w-\[60\%\] {
+  width: 60%;
 }
 
 .w-\[70\%\] {
@@ -629,8 +669,12 @@ video {
   width: 100%;
 }
 
-.min-w-\[150px\] {
-  min-width: 150px;
+.w-\[50px\] {
+  width: 50px;
+}
+
+.min-w-\[200px\] {
+  min-width: 200px;
 }
 
 .flex-col {
@@ -651,10 +695,6 @@ video {
 
 .justify-center {
   justify-content: center;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
 }
 
 .gap-10 {
@@ -692,9 +732,19 @@ video {
   border-bottom-width: 2px;
 }
 
-.border-blue-500 {
+.border-blue {
   --tw-border-opacity: 1;
-  border-color: rgb(59 130 246 / var(--tw-border-opacity));
+  border-color: rgb(0 118 157 / var(--tw-border-opacity));
+}
+
+.bg-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 118 157 / var(--tw-bg-opacity));
+}
+
+.bg-gold {
+  --tw-bg-opacity: 1;
+  background-color: rgb(218 165 32 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -746,12 +796,24 @@ video {
   padding-bottom: 60px;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pt-64 {
+  padding-top: 16rem;
+}
+
 .text-center {
   text-align: center;
 }
 
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .text-3xl {
@@ -781,6 +843,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .font-semibold {
@@ -828,7 +894,7 @@ details[open] summary::marker{
 }
 
 .course-sec{
-  background-color: #f5f5f5;
+  background-color: #ececec;
 }
 
 .all-other{
@@ -837,6 +903,10 @@ details[open] summary::marker{
 
 .cell-text{
   background-color: #095877;
+}
+
+.card{
+  box-shadow: 0px 0px 5px gray;
 }
 
 .swiper{
@@ -854,7 +924,7 @@ details[open] summary::marker{
   width: 300px;
   height: 80%;
   /* border: 1px solid black; */
-  box-shadow: 0px 0px 5px gray;
+  box-shadow: 0px 0px 5px rgb(91, 91, 240);
   background-color: rgb(250, 250, 250);
   display: flex;
   flex-direction: column;
@@ -862,12 +932,88 @@ details[open] summary::marker{
 }
 
 .p-img{
-  border: 4px solid blue;
+  border: 6px solid rgb(91, 91, 240);
+}
+
+*{
+  font-family: 'Raleway', sans-serif;
 }
 
 @media (min-width: 768px) {
   .md\:w-10\/12 {
     width: 83.333333%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:relative {
+    position: relative;
+  }
+
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:h-\[150px\] {
+    height: 150px;
+  }
+
+  .lg\:h-0 {
+    height: 0px;
+  }
+
+  .lg\:h-fit {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .lg\:w-2\/5 {
+    width: 40%;
+  }
+
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:justify-center {
+    justify-content: center;
+  }
+
+  .lg\:justify-evenly {
+    justify-content: space-evenly;
+  }
+
+  .lg\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .lg\:pt-44 {
+    padding-top: 11rem;
+  }
+
+  .lg\:pt-0 {
+    padding-top: 0px;
   }
 }
 
@@ -886,6 +1032,10 @@ details[open] summary::marker{
 
   .xl\:w-2\/3 {
     width: 66.666667%;
+  }
+
+  .xl\:w-\[40\%\] {
+    width: 40%;
   }
 
   .xl\:pl-5 {
